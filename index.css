@@ -11,5 +11,8 @@ table{
     border: 1px solid black; 
   }
   body{
-      padding: 2px;
+      padding: 5px;
+  }
+  .main{
+      background-color: rgb(207, 195, 84);
   }
