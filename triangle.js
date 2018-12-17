@@ -1,10 +1,13 @@
 function myProject(){
-var side1 = document.getElementById("side1").value;
-var side2 = document.getElementById("side2").value;
-var side3 = document.getElementById("side3").value;
+var side1 = parseInt(document.getElementById("side1").value);
+var side2 = parseInt(document.getElementById("side2").value);
+var side3 = parseInt(document.getElementById("side3").value);
+if(side1+side2>side3 &&
+    side1+side3>side2 &&
+    side2+side3>side1){
 
 if (side1===side2 && side1===side3 && side2===side3){
-   console.log( alert("Equilateral"));
+    alert("Equilateral");
 }
     else if(side1===side2 || side1===side3 || side2===side3) {
         alert("Isosceles");
@@ -13,10 +16,10 @@ if (side1===side2 && side1===side3 && side2===side3){
     else if(side1!==side2 && side1!==side3 && side2!==side3){
         alert("Scalene");
     }
-    else if(side1+side2<=side3 )||(side1+side3<=side2) ||(side2+side3<=side1){
+}
+    
+    else{
         alert("not a triangle");
     }
-    else{
-        alert("invalid");
-    }
-}
+};
+var triangles = ["Equilateral","Isosceles","Scalene"];
